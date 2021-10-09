@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EXAM</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+   <section id="loading-screen">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+    </section>
+
+    <section id="slide">
+
+        <div class="header-nav">
+            <div class="logo">
+                <img src="images/logo.png" height="48px" class="my-3" alt="">
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-align-justify fa-times fs-3"></i>
+            </div>
+            <div class="social-icon">
+                <div class="mb-2">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-tab-menu">
+            <div class="nav-item text-start my-5">
+                <ul class="list-unstyled h-50">
+                    <li class="text-white item1">now_playing</li>
+                    <li class="text-white item2">popular</li>
+                    <li class="text-white item3">top_rated</li>
+                    <li class="text-white item4">trending</li>
+                    <li class="text-white item5">upcoming</li>
+                    <li class="text-white item6"><a class="text-decoration-none text-white" href="#contacts">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-item-social text-start">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <div>
+                    <p class="text-white mt-2">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="searchMovie" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" onkeyup="search(this.value)"
+                            placeholder="Get Movies by Word...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="linear"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class="py-4 position-relative">
+
+        <div class="container text-center my-1 py-2">
+            <div class="row" id="moviesData">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="py-5 my-5">
+        <div class="container">
+            <h3 class="text-light my-5">ContacUs...</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+                        <div class="alert alert-danger" id="nameAlert" role="alert">Your Name is not valid</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
+                        <div class="alert alert-danger" id="EmailAlert" role="alert">Your Email is not valid</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <input type="number" id="phone" class="form-control" placeholder="Enter Phone">
+                        <div class="alert alert-danger" id="phoneAlert" role="alert">Your Phone is not valid</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="number" id="age" class="form-control" placeholder="Enter Your age">
+                        <div class="alert alert-danger" id="ageAlert" role="alert">You must be between 10 and 80 years
+                            old
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="password" id="passward" class="form-control" placeholder="Enter Your Passward">
+                        <div class="alert alert-danger" id="passwordAlert" role="alert">entre valid password *Minimum
+                            eight characters and at least one number:*</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="password" id="repassward" class="form-control" placeholder="Enter Your Passward">
+                        <div class="alert alert-danger" id="rePasswardAlert" role="alert">entre valid password</div>
+                    </div>
+                </div>
+            </div>
+            <button disabled class="btn btn-danger mt-5" id="submitBtn">Submit</button>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
